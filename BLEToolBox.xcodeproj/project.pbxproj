@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3B8C5827B513B10052692F /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B8C5727B513B10052692F /* ProgressBarView.swift */; };
+		2E3B8C5A27B521580052692F /* DeviceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B8C5927B521580052692F /* DeviceDetailsView.swift */; };
 		2EE692C727B3B5EB00C42088 /* BLEToolBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE692C627B3B5EB00C42088 /* BLEToolBoxApp.swift */; };
 		2EE692C927B3B5EB00C42088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE692C827B3B5EB00C42088 /* ContentView.swift */; };
 		2EE692CB27B3B5EF00C42088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE692CA27B3B5EF00C42088 /* Assets.xcassets */; };
 		2EE692CE27B3B5EF00C42088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE692CD27B3B5EF00C42088 /* Preview Assets.xcassets */; };
+		2EE692D527B3B94200C42088 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE692D427B3B94200C42088 /* BLEManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E3B8C5727B513B10052692F /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		2E3B8C5927B521580052692F /* DeviceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsView.swift; sourceTree = "<group>"; };
 		2EE692C327B3B5EB00C42088 /* BLEToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE692C627B3B5EB00C42088 /* BLEToolBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEToolBoxApp.swift; sourceTree = "<group>"; };
 		2EE692C827B3B5EB00C42088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2EE692CA27B3B5EF00C42088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EE692CD27B3B5EF00C42088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EE692D427B3B94200C42088 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		2EE692D627B3B9D700C42088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,8 @@
 		2EE692BA27B3B5EB00C42088 = {
 			isa = PBXGroup;
 			children = (
+				2E3B8C5927B521580052692F /* DeviceDetailsView.swift */,
+				2E3B8C5727B513B10052692F /* ProgressBarView.swift */,
 				2EE692C527B3B5EB00C42088 /* BLEToolBox */,
 				2EE692C427B3B5EB00C42088 /* Products */,
 			);
@@ -51,10 +60,12 @@
 		2EE692C527B3B5EB00C42088 /* BLEToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				2EE692D627B3B9D700C42088 /* Info.plist */,
 				2EE692C627B3B5EB00C42088 /* BLEToolBoxApp.swift */,
 				2EE692C827B3B5EB00C42088 /* ContentView.swift */,
 				2EE692CA27B3B5EF00C42088 /* Assets.xcassets */,
 				2EE692CC27B3B5EF00C42088 /* Preview Content */,
+				2EE692D427B3B94200C42088 /* BLEManager.swift */,
 			);
 			path = BLEToolBox;
 			sourceTree = "<group>";
@@ -138,6 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EE692C927B3B5EB00C42088 /* ContentView.swift in Sources */,
+				2E3B8C5827B513B10052692F /* ProgressBarView.swift in Sources */,
+				2E3B8C5A27B521580052692F /* DeviceDetailsView.swift in Sources */,
+				2EE692D527B3B94200C42088 /* BLEManager.swift in Sources */,
 				2EE692C727B3B5EB00C42088 /* BLEToolBoxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +286,9 @@
 				DEVELOPMENT_TEAM = ZT7SZU32GJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BLEToolBox/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please give bluetooth permission";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please give bluetooth permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +318,9 @@
 				DEVELOPMENT_TEAM = ZT7SZU32GJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BLEToolBox/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please give bluetooth permission";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please give bluetooth permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
